@@ -1,0 +1,7 @@
+{
+  "name": "ma-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
