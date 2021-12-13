@@ -1,0 +1,15 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Custom Battery Sensor</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <div *ngIf="batteryStatus" class="battery-status">
+      <ion-icon [name]="batteryStatus.charging ? 'battery-charging' :
+                        batteryStatus.level <= 0.1 ? 'battery-dead' :
+                                                     'battery-full'">
+
+      </ion-icon>
+      <span>{{(batteryStatus.level * 100).toString()}} %</span>
+    </div>
+  </ion-card-content>
+</ion-card>

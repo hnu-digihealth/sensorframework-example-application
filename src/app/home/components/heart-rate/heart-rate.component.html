@@ -1,0 +1,13 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Heart Rate</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <div *ngIf="heartRateMeasurement" class="heart-rate-display">
+      <ion-icon name="heart"></ion-icon>
+      <span class="heart-rate-data">{{heartRateMeasurement.heartRate}}</span>
+      <span class="heart-rate-unit">BPM</span>
+    </div>
+    <sensor-element sensor="ble-heart-rate" action="watch" scope="local" (sampleData)="setHeartRate($event)"></sensor-element>
+  </ion-card-content>
+</ion-card>

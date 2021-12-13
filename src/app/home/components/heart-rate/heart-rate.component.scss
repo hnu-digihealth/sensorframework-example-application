@@ -1,0 +1,30 @@
+:host{
+  .heart-rate-display{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+
+    > * {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .heart-rate-data{
+      font-weight: 300;
+      font-size: 3em;
+    }
+
+    .heart-rate-unit{
+      font-size: 2em;
+    }
+
+    ion-icon{
+      font-size: 3em;
+      color: indianred;
+    }
+
+
+  }
+}
